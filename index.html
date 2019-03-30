@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal-Game</title> 
+     <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+   
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crystals Collectors!</h1>
+
+        <!-- The instructions  -->
+        <div class="text-box"> 
+            <p>
+            You will be given a random number at the start of the game.
+            </br>
+
+            There are four crystals below. By clicling on a crystal you 
+            will add a specific amount of point to yur total score.
+            </br>
+
+            You win the game by matching your total score to random number, you lose the game 
+            if your total score goes above the random number.
+            </br>
+            
+            The the value of each crystal is hidden from you until 
+            you clcik on it.
+            </br>
+
+            Each time when the game starts, the game will change the values of each crystal.  
+            </br>
+            </p>
+        </div>
+
+        <!-- This will be filled later -->
+        <div id="random-numbers-box"></div>
+
+        <!-- Table win and losses -->
+        <div class="col-md-6 gameplay-column">
+            <div id="result"></div> 
+            <div id="win">Win:</div> 
+            <div id="losses">Losses:</div>
+        </div>
+
+        <!-- all the images -->
+        <div id="crystals">
+        <img id="hexagon" src= "assets/Images/hexagono-crystal.jpg " class="rounded float-left">
+        <img id="diamond" src= "assets/Images/diamond-crystal.png "  class="rounded float-left">
+        <img id="octagon" src = "assets/Images/octagono-crystal.jpg "class="rounded float-left">
+        <img id="square" src= "assets/Images/square-crystal.png" class="rounded float-left">
+        </div>
+         <!-- </div> -->
+</br>
+
+    <!-- Box of the scores -->
+    <div class="row">
+        <h2>Your total score is:</h2>
+    </div>
+
+    <!-- Box of results -->
+    <div 
+            id="result-box">
+    </div>
+</div>  
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="javascript/game.js"></script>
+
+</body>
+</html>
